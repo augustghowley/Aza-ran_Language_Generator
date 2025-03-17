@@ -1,0 +1,284 @@
+/* Layout by August G. Howley */
+
+/* Importing Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pridi&family=Cinzel+Decorative&family=Uncial+Antiqua&display=swap'); /* Steampunk and Fantasy Fonts */
+
+/* Global Font Settings */
+BODY {
+    font-family: "Pridi", "Cinzel Decorative", "Uncial Antiqua", verdana, helvetica, arial, sans-serif;
+    font-size: 11px;
+    background: #000000 no-repeat fixed center top;
+    margin-bottom: 0;
+    color: #FFFFFF; /* Body text in white */
+    position: relative;
+}
+
+/* Header and Footer */
+DIV#header, DIV#googlebar {
+    background: transparent;
+}
+
+DIV.header {
+    background-color: transparent;
+    color: #00b3b3; /* Teal */
+    padding: 20px 0;
+    text-align: center;
+}
+
+DIV.header h1 {
+    font-size: 36px;
+    color: #00b3b3; /* Cyan for header title */
+    margin-bottom: 10px;
+    font-family: "Cinzel Decorative", "Uncial Antiqua", sans-serif;
+}
+
+DIV.header h2 {
+    font-size: 22px;
+    color: #ff7043; /* Soft orange for sub-title */
+    margin-bottom: 20px;
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
+DIV.header p {
+    font-size: 14px;
+    color: #ff7043; /* Soft orange for the text */
+}
+
+/* Updated Footer Section */
+.footer {
+    background-color: transparent;
+    padding: 20px 0;
+    text-align: center;
+    color: #00b3b3; /* Teal text */
+    border-top: 2px solid #00b3b3; /* Cyan border at the top */
+}
+
+.footer h3 {
+    font-size: 22px;
+    color: #00b3b3; /* Cyan for footer header */
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ff7043; /* Soft orange for the text */
+    margin: 5px 0;
+}
+
+.footer a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer .button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Video Section Styling */
+DIV.video {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Adjusted width for video */
+    height: 300px; /* Adjusted height for video */
+    padding-top: 20px;
+    background-color: #000;
+    border: 2px solid #00b3b3; /* Cyan border around the video section */
+    border-radius: 10px;
+}
+
+/* Video Styling */
+DIV.video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Subtitles Styling */
+DIV.video .subtitles {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff7043; /* Subtitles in soft orange */
+    font-family: 'Pridi', serif;
+}
+
+/* Play and Pause Button Styling */
+DIV.video .video-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+DIV.video button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+DIV.video button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Audio Module Styling */
+.module.audio-module {
+    background: #050f07; /* Dark background */
+    color: #00b3b3; /* Teal text */
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #00b3b3; /* Cyan border */
+}
+
+.module.audio-module h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.module.audio-module p {
+    font-size: 14px;
+    color: #ff7043; /* Soft orange for text */
+    margin-bottom: 15px;
+}
+
+.audio-controls {
+    margin-top: 20px;
+}
+
+.audio-controls button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-controls button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Module Styling */
+DIV.moduleMid2 {
+    background: transparent;
+    border: 2px solid #755c4f; /* Steampunk metal border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Adding a slight metal sheen */
+}
+
+/* Text Color */
+DIV.profileHeaderDetails H2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #00b3b3; /* Cyan for subtitle */
+}
+
+/* Starry Background Elements (Twinkling Stars, Shooting Stars, Comets, Gears) */
+.star-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    animation: shoot 2s linear forwards;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw) translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.comet {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #ff7043; /* Orange comet */
+    border-radius: 5px;
+    animation: cometTrail 4s linear infinite;
+}
+
+@keyframes cometTrail {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100vw) translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.gear {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #755c4f; /* Steampunk metal gear */
+    border-radius: 50%;
+    animation: spinGear 20s infinite linear;
+}
+
+@keyframes spinGear {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

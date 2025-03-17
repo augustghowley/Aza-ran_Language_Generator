@@ -1,0 +1,388 @@
+{
+    "created_words": {
+        "log": [],
+        "rules": {
+            "phonetic_structure": "Words follow consonant-vowel harmony and avoid excessive clustering, as defined in data_rules.json.",
+            "syllable_structure": "Generated words prefer CV or VC structure for fluid pronunciation, based on data_rules.json.",
+            "uniqueness_check": "No duplicate words are allowed. Similar words are slightly altered, as per data_rules.json.",
+            "auto_sorting": "New words are automatically assigned to the correct category based on structure and meaning, using data_rules.json.",
+            "pronunciation_generator": "Generated words are assigned phonetic transcriptions following Aza'ran syllable patterns, using data_alphabet.json."
+        },
+        "dictionary": {
+            "Azaran_word": "example",
+            "Azaran_pronunciation": "example",
+            "meaning_in_English": "example"
+        },
+        "adjectives": {
+            "𐡇𐡉𐡍": {
+                "pronunciation": "Hee-nah",
+                "meaning": "Strong",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡊𐡍𐡀": {
+                "pronunciation": "Lah-kah",
+                "meaning": "Bright",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡍𐡀𐡋𐡀": {
+                "pronunciation": "Nah-mah",
+                "meaning": "Beautiful",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "adverbs": {
+            "𐡉𐡋𐡏𐡀": {
+                "pronunciation": "Ee-loh-ah",
+                "meaning": "Quickly",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡓𐡎𐡀": {
+                "pronunciation": "Lah-rahn",
+                "meaning": "Soon",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "conjunctions": {
+            "𐡕𐡉𐡇𐡉": {
+                "pronunciation": "Ti-rah-ee",
+                "meaning": "And",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡊𐡍𐡉": {
+                "pronunciation": "Tih-kah-nee",
+                "meaning": "But",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡋𐡉𐡍": {
+                "pronunciation": "Ti-lah-een",
+                "meaning": "Or",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡓𐡉": {
+                "pronunciation": "Ti-rah",
+                "meaning": "Because",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "interjections": {
+            "𐡋𐡀𐡓𐡎!": {
+                "pronunciation": "Lah-rahs!",
+                "meaning": "Watch out!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡉𐡓𐡀!": {
+                "pronunciation": "Lah-ree!",
+                "meaning": "Look!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡍𐡀𐡋!": {
+                "pronunciation": "Lah-nah-lah!",
+                "meaning": "Listen!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡍𐡀𐡎𐡉!": {
+                "pronunciation": "Nah-see!",
+                "meaning": "Beware!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡍𐡋𐡉𐡓!": {
+                "pronunciation": "Nah-leer!",
+                "meaning": "Silence!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡓𐡉𐡕!": {
+                "pronunciation": "Rahs!",
+                "meaning": "Halt!",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "nouns": {
+            "𐡀𐡆𐡀𐡏𐡓𐡀": {
+                "pronunciation": "Aza-ruh",
+                "meaning": "To help or assist",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡑𐡎𐡀": {
+                "pronunciation": "Lah-psah",
+                "meaning": "Knowledge keeper, guide",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡉𐡎𐡉": {
+                "pronunciation": "Lee-see",
+                "meaning": "Love, affection",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡌𐡉𐡍𐡀": {
+                "pronunciation": "Mee-nah",
+                "meaning": "Sacred knowledge",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡌𐡉𐡎𐡀𐡓": {
+                "pronunciation": "Mee-sar",
+                "meaning": "Celestial alignment",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡍𐡀𐡎𐡍": {
+                "pronunciation": "Nah-sahn",
+                "meaning": "Healthful recovery",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡏𐡀𐡋𐡀𐡕": {
+                "pronunciation": "Ah-laths",
+                "meaning": "Eternal guardian",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡎𐡀𐡏𐡋𐡉": {
+                "pronunciation": "Sa-ohl",
+                "meaning": "Echo of time",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡎𐡀𐡏𐡍": {
+                "pronunciation": "Sa-ohn",
+                "meaning": "Horizon",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡓𐡉𐡕𐡋𐡀": {
+                "pronunciation": "Rah-nahm",
+                "meaning": "Hidden path",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡀𐡎𐡉𐡍": {
+                "pronunciation": "Tah-seen",
+                "meaning": "Forgotten prophecy",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡉𐡍𐡕𐡀𐡌𐡀𐡍𐡀𐡋": {
+                "pronunciation": "Ee-n-thah-nah-rah",
+                "meaning": "Fluid and melodic speech",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "prepositions": {
+            "𐡉𐡍𐡀": {
+                "pronunciation": "Ee-nah",
+                "meaning": "On",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡉𐡎𐡀": {
+                "pronunciation": "Ee-sah",
+                "meaning": "Under",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡒𐡉": {
+                "pronunciation": "Lah-kee",
+                "meaning": "Beside",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡌𐡉𐡓𐡀": {
+                "pronunciation": "Mee-rah",
+                "meaning": "Beyond",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "pronouns_and_genders": {
+            "𐡃𐡀𐡑𐡀𐡋𐡀": {
+                "gender_identity": "Transgender Male",
+                "pronunciation": "Dah-bah-lah",
+                "pronouns": {
+                    "subjective": "𐡃𐡀𐡑𐡀𐡋𐡀",
+                    "object": "𐡃𐡀𐡑𐡀𐡋𐡀𐡕",
+                    "possessive": "𐡃𐡀𐡑𐡀𐡋𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Dah-bah-lah",
+                    "object": "Dah-balath",
+                    "possessive": "Dah-balad"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡍𐡀𐡌": {
+                "gender_identity": "Demi-Female",
+                "pronunciation": "Lah-nahm",
+                "pronouns": {
+                    "subjective": "𐡋𐡀𐡍𐡀𐡌",
+                    "object": "𐡋𐡀𐡍𐡀𐡌𐡕",
+                    "possessive": "𐡋𐡀𐡍𐡀𐡌𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Lah-nahm",
+                    "object": "Lanamth",
+                    "possessive": "Lanamd"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡑𐡎𐡀": {
+                "gender_identity": "Bigender",
+                "pronunciation": "Lah-psah",
+                "pronouns": {
+                    "subjective": "𐡋𐡀𐡑𐡎𐡀",
+                    "object": "𐡋𐡀𐡑𐡎𐡀𐡕",
+                    "possessive": "𐡋𐡀𐡑𐡎𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Lah-psah",
+                    "object": "Lah-psahth",
+                    "possessive": "Lah-psahd"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡏𐡀𐡋𐡀": {
+                "gender_identity": "Cisgender Female",
+                "pronunciation": "Ah-lah",
+                "pronouns": {
+                    "subjective": "𐡏𐡀𐡋𐡀",
+                    "object": "𐡏𐡀𐡋𐡀𐡕",
+                    "possessive": "𐡏𐡀𐡋𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Ah-lah",
+                    "object": "Alath",
+                    "possessive": "Alad"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡏𐡊𐡍𐡀": {
+                "gender_identity": "Genderless",
+                "pronunciation": "Ahk-nah",
+                "pronouns": {
+                    "subjective": "𐡏𐡊𐡍𐡀",
+                    "object": "𐡏𐡊𐡍𐡀𐡕",
+                    "possessive": "𐡏𐡊𐡍𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Ahk-nah",
+                    "object": "Aknath",
+                    "possessive": "Aknadd"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡐𐡀𐡎𐡋𐡀": {
+                "gender_identity": "Gender-Flexible",
+                "pronunciation": "Pah-slah",
+                "pronouns": {
+                    "subjective": "𐡐𐡀𐡎𐡋𐡀",
+                    "object": "𐡐𐡀𐡎𐡋𐡀𐡕",
+                    "possessive": "𐡐𐡀𐡎𐡋𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Pah-slah",
+                    "object": "Pa’slath",
+                    "possessive": "Pa’slad"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡐𐡉𐡎𐡌𐡀": {
+                "gender_identity": "Genderfluid",
+                "pronunciation": "Pees-mah",
+                "pronouns": {
+                    "subjective": "𐡐𐡉𐡎𐡌𐡀",
+                    "object": "𐡐𐡉𐡎𐡌𐡀𐡕",
+                    "possessive": "𐡐𐡉𐡎𐡌𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Pees-mah",
+                    "object": "Pismath",
+                    "possessive": "Pismad"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡓𐡀𐡆𐡀": {
+                "gender_identity": "Cisgender Male",
+                "pronunciation": "Rah-zah",
+                "pronouns": {
+                    "subjective": "𐡓𐡀𐡆𐡀",
+                    "object": "𐡓𐡀𐡆𐡀𐡕",
+                    "possessive": "𐡓𐡀𐡆𐡀𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Rah-zah",
+                    "object": "Rah-zath",
+                    "possessive": "Rah-zad"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡓𐡀𐡍𐡀𐡌": {
+                "gender_identity": "Demi-Male",
+                "pronunciation": "Rah-nahm",
+                "pronouns": {
+                    "subjective": "𐡓𐡀𐡍𐡀𐡌",
+                    "object": "𐡓𐡀𐡍𐡀𐡌𐡕",
+                    "possessive": "𐡓𐡀𐡍𐡀𐡌𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Rah-nahm",
+                    "object": "Ranamth",
+                    "possessive": "Ranamd"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡀𐡎𐡉𐡍": {
+                "gender_identity": "Transgender Female",
+                "pronunciation": "Tah-seen",
+                "pronouns": {
+                    "subjective": "𐡕𐡀𐡎𐡉𐡍",
+                    "object": "𐡕𐡀𐡎𐡉𐡍𐡕",
+                    "possessive": "𐡕𐡀𐡎𐡉𐡍𐡑"
+                },
+                "pronunciation_variants": {
+                    "subjective": "Tah-seen",
+                    "object": "Ta’sinth",
+                    "possessive": "Ta’sind"
+                },
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        },
+        "verbs": {
+            "𐡀𐡆𐡀𐡏𐡓𐡀": {
+                "pronunciation": "Aza-ruh",
+                "meaning": "To help or assist",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡉𐡊𐡓": {
+                "pronunciation": "Yek-rah",
+                "meaning": "To be",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡉𐡌𐡇𐡓": {
+                "pronunciation": "Eem-har",
+                "meaning": "To forgive",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡉𐡋𐡊𐡀": {
+                "pronunciation": "Ee-lah-kah",
+                "meaning": "To dream",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡀𐡎𐡓": {
+                "pronunciation": "Lah-sar",
+                "meaning": "To create",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡋𐡌𐡉𐡍": {
+                "pronunciation": "Lah-mein",
+                "meaning": "To grow",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡌𐡊𐡓𐡕": {
+                "pronunciation": "Mah-kar",
+                "meaning": "To run",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡓𐡊𐡉𐡍": {
+                "pronunciation": "Rah-keen",
+                "meaning": "To learn",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡉𐡎𐡉": {
+                "pronunciation": "Tee-see",
+                "meaning": "To see",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            },
+            "𐡕𐡊𐡍𐡉": {
+                "pronunciation": "Tee-kah-nee",
+                "meaning": "To follow",
+                "source": "Generated using data_alphabet.json and data_rules.json."
+            }
+        }
+    }
+}

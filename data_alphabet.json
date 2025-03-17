@@ -1,0 +1,160 @@
+{
+  "alphabet": [
+      {
+          "symbol": "𐡀",
+          "pronunciation": "' (glottal stop)",
+          "example": "Hawai‘i",
+          "type": "consonant",
+          "usage": "Common in word-initial and medial positions."
+      },
+      {
+          "symbol": "𐡁",
+          "pronunciation": "p",
+          "example": "pen",
+          "type": "consonant",
+          "usage": "Used in both initial and final positions."
+      },
+      {
+          "symbol": "𐡂",
+          "pronunciation": "k",
+          "example": "kite",
+          "type": "consonant",
+          "usage": "Common in initial and medial positions."
+      },
+      {
+          "symbol": "𐡃",
+          "pronunciation": "t",
+          "example": "top",
+          "type": "consonant",
+          "usage": "Frequent in all word positions."
+      },
+      {
+          "symbol": "𐡄",
+          "pronunciation": "h",
+          "example": "hat",
+          "type": "consonant",
+          "usage": "Common in initial and medial positions."
+      },
+      {
+          "symbol": "𐡅",
+          "pronunciation": "w (or v)",
+          "example": "water",
+          "type": "consonant",
+          "usage": "Used in initial and medial positions."
+      },
+      {
+          "symbol": "𐡆",
+          "pronunciation": "l",
+          "example": "leaf",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡇",
+          "pronunciation": "m",
+          "example": "moon",
+          "type": "consonant",
+          "usage": "Frequent in all word positions."
+      },
+      {
+          "symbol": "𐡈",
+          "pronunciation": "n",
+          "example": "night",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡉",
+          "pronunciation": "ee (or y)",
+          "example": "bee",
+          "type": "vowel",
+          "usage": "Used in all word positions."
+      },
+      {
+          "symbol": "𐡊",
+          "pronunciation": "ah",
+          "example": "father",
+          "type": "vowel",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡋",
+          "pronunciation": "eh",
+          "example": "bed",
+          "type": "vowel",
+          "usage": "Used in all word positions."
+      },
+      {
+          "symbol": "𐡌",
+          "pronunciation": "oh",
+          "example": "open",
+          "type": "vowel",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡍",
+          "pronunciation": "oo",
+          "example": "blue",
+          "type": "vowel",
+          "usage": "Used in all word positions."
+      },
+      {
+          "symbol": "𐡎",
+          "pronunciation": "s",
+          "example": "sun",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡏",
+          "pronunciation": "'oh (glottalized)",
+          "example": "'ohana",
+          "type": "consonant",
+          "usage": "Used in initial and medial positions."
+      },
+      {
+          "symbol": "𐡐",
+          "pronunciation": "b",
+          "example": "book",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡑",
+          "pronunciation": "d",
+          "example": "dog",
+          "type": "consonant",
+          "usage": "Frequent in all word positions."
+      },
+      {
+          "symbol": "𐡒",
+          "pronunciation": "g",
+          "example": "go",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡓",
+          "pronunciation": "r (lightly rolled)",
+          "example": "run",
+          "type": "consonant",
+          "usage": "Used in all word positions."
+      },
+      {
+          "symbol": "𐡔",
+          "pronunciation": "sh",
+          "example": "shoe",
+          "type": "consonant",
+          "usage": "Common in all word positions."
+      },
+      {
+          "symbol": "𐡕",
+          "pronunciation": "ch",
+          "example": "chocolate",
+          "type": "consonant",
+          "usage": "Used in all word positions."
+      }
+  ]
+}
+
+  

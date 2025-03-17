@@ -1,0 +1,95 @@
+{
+  "language": {
+      "name": "Aza'ran",
+      "description": "A dynamic language born of the Aarak and Aramaic traditions, reflecting harmony between melodic vowels and structured consonants.",
+      "phonetic_structure": {
+          "vowel_dominant": "Emphasizes vowel clusters for fluid pronunciation, creating a melodic tone.",
+          "consonant_clusters": "Appear mainly at word boundaries, with smooth transitions in speech.",
+          "syllable_structure": "Typically follows a CV or VC pattern for rhythmic speech.",
+          "phonotactics": "Rarely starts with multiple consonants unless in compound words."
+      }
+  },
+  "word_formation": {
+      "agglutinative": "Aza'ran forms words by combining morphemes, preserving their integrity.",
+      "prefixes_suffixes": {
+          "prefixes": {
+              "𐡉-": "Marks a question.",
+              "𐡍-": "Indicates negation.",
+              "𐡌-": "Denotes an ongoing action.",
+              "𐡊-": "Expresses identity or state."
+          },
+          "suffixes": {
+              "-𐡋": "Indicates past tense.",
+              "-𐡌": "Marks present continuous tense.",
+              "-𐡎": "Denotes future tense.",
+              "-𐡕": "Represents completed actions.",
+              "-𐡎𐡍": "Forms plurals."
+          }
+      },
+      "neutral_forms": "Neutral bases allow flexible interpretation, stripped of affixes.",
+      "compound_word_formation": {
+          "rules": "Combines root words with minor pronunciation adjustments.",
+          "examples": {
+              "𐡍𐡀𐡓 + 𐡌𐡀": "𐡍𐡀𐡓𐡌𐡀 (empowered self).",
+              "𐡉𐡊 + 𐡎𐡌": "𐡉𐡊𐡎𐡌 (harmonic flow)."
+          }
+      }
+  },
+  "sentence_structure": {
+      "word_order": "Subject-Object-Verb (SOV) structure creates clarity.",
+      "modifiers": "Descriptive words follow nouns, unless for emphasis.",
+      "emphasis": "Achieved by fronting objects or redundant markers."
+  },
+  "pronunciation_rules": {
+      "vowel_harmony": "Vowels harmonize in frontness/backness across words.",
+      "stress": "Falls on the penultimate syllable, or shifts in compounds.",
+      "intonation_patterns": {
+          "statements": "End with a falling tone.",
+          "questions": "Rise in pitch or use '𐡉-' prefix.",
+          "commands": "Sharp, downward tone."
+      }
+  },
+  "tense_aspect": {
+      "tense_markers": {
+          "past": "Suffix '-𐡋' indicates completed actions.",
+          "present": "Suffix '-𐡌' denotes ongoing actions.",
+          "future": "Suffix '-𐡎' marks anticipated actions."
+      },
+      "aspect_markers": {
+          "completed": "Suffix '-𐡕' indicates completion.",
+          "ongoing": "Suffix '-𐡌' represents continuity.",
+          "habitual": "Suffix '-𐡎𐡍' conveys repetition."
+      }
+  },
+  "questions_negation": {
+      "questions": {
+          "intonation": "Rising tone with question particles.",
+          "particle": "Prefix '𐡉-' or intonation signals questions."
+      },
+      "negation": {
+          "word": "Prefix '𐡍-' negates actions or states."
+      }
+  },
+  "plurals_collective_forms": {
+      "plural_marker": "Suffix '-𐡎𐡍' creates plural forms.",
+      "collective_pronouns": "Uses suffixes to indicate collective entities."
+  },
+  "writing_system": {
+      "logograms_characters": "Uses logograms influenced by Aarak and Aramaic scripts.",
+      "direction_of_writing": "Traditionally vertical, with modern horizontal flexibility.",
+      "numerical_system": "Base-6 numerical system reflects Aarak origins."
+  },
+  "idiomatic_expressions": {
+      "nature_based_metaphors": "Draws heavily on celestial and natural imagery.",
+      "color_emotion": "Links emotional states to vowels and associated colors."
+  },
+  "generation_rules": {
+      "phonetic_structure": "Words follow consonant-vowel harmony and avoid excessive clustering.",
+      "syllable_structure": "Generated words prefer CV or VC structure for fluid pronunciation.",
+      "uniqueness_check": "No duplicate words are allowed. Similar words are slightly altered.",
+      "auto_sorting": "New words are automatically assigned to the correct category based on structure and meaning.",
+      "pronunciation_generator": "Generated words are assigned phonetic transcriptions following Aza'ran syllable patterns."
+  }
+}
+
+  

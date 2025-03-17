@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aza'ran Fantasy Language Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&family=Cinzel+Decorative&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Layout by August G. Howley */
+
+        /* Global Font Settings */
+        body {
+            font-family: "Pridi", "Cinzel Decorative", "Uncial Antiqua", verdana, helvetica, arial, sans-serif;
+            font-size: 11px;
+            background: #000000 no-repeat fixed center top;
+            margin-bottom: 0;
+            color: #FFFFFF;
+            position: relative;
+        }
+
+        /* Header and Footer */
+        .header, .footer {
+            background-color: transparent;
+            color: #00b3b3; /* Teal */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #00b3b3;
+            margin-bottom: 10px;
+            font-family: "Cinzel Decorative", "Uncial Antiqua", sans-serif;
+        }
+
+        .header h2 {
+            font-size: 22px;
+            color: #ff7043; /* Soft orange */
+            margin-bottom: 20px;
+            font-family: "Cinzel Decorative", sans-serif;
+        }
+
+        .header p, .footer p {
+            font-size: 14px;
+            color: #ff7043;
+        }
+
+        .footer {
+            border-top: 2px solid #00b3b3; /* Cyan border */
+        }
+
+        .footer h3 {
+            font-size: 22px;
+            color: #00b3b3;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .button {
+            background-color: black;
+            color: cyan;
+            font-size: 14px;
+            padding: 10px 20px;
+            border: 2px solid cyan;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .footer .button:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+        /* Video Section Styling */
+        .video {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            padding-top: 20px;
+            background-color: #000;
+            border: 2px solid #00b3b3;
+            border-radius: 10px;
+        }
+
+        .video video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video .subtitles {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ff7043;
+            font-family: 'Pridi', serif;
+        }
+
+        .video .video-controls {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .video button {
+            background-color: black;
+            color: cyan;
+            font-size: 14px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 2px solid cyan;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .video button:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+        /* Audio Module Styling */
+        .module.audio-module {
+            background: #050f07;
+            color: #00b3b3;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #00b3b3;
+        }
+
+        .module.audio-module h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .module.audio-module p {
+            font-size: 14px;
+            color: #ff7043;
+            margin-bottom: 15px;
+        }
+
+        .audio-controls button {
+            background-color: black;
+            color: cyan;
+            font-size: 14px;
+            padding: 10px 20px;
+            border: 2px solid cyan;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .audio-controls button:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+        /* Module Styling */
+        .moduleMid2 {
+            background: transparent;
+            border: 2px solid #755c4f; /* Steampunk metal border */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Starry Background Elements */
+        .star-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        .shooting-star {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            animation: shoot 2s linear forwards;
+        }
+
+        @keyframes shoot {
+            0% {
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100vw) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        .comet {
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #ff7043;
+            border-radius: 5px;
+            animation: cometTrail 4s linear infinite;
+        }
+
+        @keyframes cometTrail {
+            0% {
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100vw) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        .gear {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #755c4f;
+            border-radius: 50%;
+            animation: spinGear 20s infinite linear;
+        }
+
+        @keyframes spinGear {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aza'ran Fantasy Language Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&family=Cinzel+Decorative&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Background Elements -->
+    <div class="star-container"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Aza'ran Fantasy Language Generator</h1>
+        <h2>About the Project</h2>
+        <p>Help me generate a dictionary using my generator and be a part of a creative project!</p>
+    </div>
+
+    <!-- Video Module -->
+    <div class="video">
+        <video controls>
+            <source src="npc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="subtitles">
+            <p>Aza'ran Greeting: 𐡍𐡀𐡌𐡍𐡀! 𐡇𐡉 𐡋𐡀𐡑𐡎𐡀 𐡉𐡇𐡋 𐡉𐡊𐡓 𐡏𐡊𐡍𐡀.</p>
+            <p>𐡇𐡉 𐡏𐡊𐡍𐡀 𐡉𐡇𐡋 𐡏𐡊𐡍𐡀, 𐡏𐡊𐡍𐡀𐡕, �极𐡍𐡀𐡑.</p>
+            <p>English Translation: "Greetings! My name is Lah-psah. My pronouns are Aknah (subject), Aknath (object), and Aknadd (possessive)."</p>
+        </div>
+        <div class="video-controls">
+            <button onclick="playVideo()">Play</button>
+            <button onclick="pauseVideo()">Pause</button>
+        </div>
+    </div>
+
+    <!-- Audio Module -->
+    <div class="module audio-module">
+        <h3>Audio Module</h3>
+        <p>Click on any word in the dictionary to hear its pronunciation.</极>
+        <div class="audio-controls">
+            <button onclick="stopOscillator()">Stop Sound</button>
+        </div>
+    </div>
+
+    <!-- Word Generator Module -->
+    <div class="module word-generator-module">
+        <h3>Auto-Generate Words for Aza'ran Dictionary</h3>
+        <p class="instructions">Click a button to generate a new word in the selected category:</p>
+        <button class="category-button" id="generateAdjective">Generate Adjective</button>
+        <button class="category-button" id="generateAdverb">Generate Adverb</button>
+        <button class="category-button" id="generateConjunction">Generate Conjunction</button>
+        <button class="category-button" id="generateInterjection">Generate Interjection</button>
+        <button class="category-button" id="generateNoun">Generate Noun</button>
+        <button class="category-button" id="generatePreposition">Generate Preposition</button>
+        <button class="category-button" id="generateVerb">Generate Verb</button>
+        <p class="note">*Note: Generated words will be added to the corresponding category in the dictionary and must be unique, based on rules from data_rules.json. Please refer to data_alphabet.json for the alphabetical order during generation.*</p>
+    </div>
+
+    <!-- Dictionary Module -->
+    <div class="module moduleMid2 dictionary-module">
+        <h3 class="moduleHead">Dictionary Module</h3>
+        <div class极dictionary-box">
+            <div class="filterButtons">
+                <button onclick="loadWords('adjectives')">Adjectives</button>
+                <button onclick="loadWords('adverbs')">Adverbs</button>
+                <button onclick="loadWords('conjunctions')">Conjunctions</button>
+                <button onclick="loadWords('interjections')">Interjections</button>
+                <button onclick="loadWords('nouns')">Nouns</button>
+                <button onclick="loadWords('prepositions')">Prepositions</button>
+                <button onclick="loadWords('pronouns_and_genders')">Pronouns & Genders</button>
+                <button onclick="loadWords('verbs')">Verbs</button>
+            </div>
+            <div class="wordList" id="wordList">
+                <ul id="wordListContent"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h3>About Me</h3>
+        <p>My name is August G Howley, I am a trans storyteller blending inclusive world-building, sci-fi fantasy, and immersive language systems across novels and interactive game development.</p>
+        <button class="button" onclick="window.open('https://linktr.ee/augustghowley', '_blank')">Visit My Linktree</button>
+        <p>&copy; 2025 Aza'ran Language Project. All rights reserved.</p>
+        <p><a href="README.md" style="color: cyan;">Read the Documentation</a></p>
+    </div>
+
+    <script>
+        // Wait for the document to load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Load necessary files
+            loadFiles();
+
+            // Setup modules
+            setupModules();
+
+            // Setup the starry sky elements
+            setupStarrySky();
+
+            // Attach event listeners to word generator buttons
+            document.getElementById('generateAdjective').addEventListener('click', () => generateWord('adjectives'));
+            document.getElementById('generateAdverb').addEventListener('click', () => generateWord('adverbs'));
+            document.getElementById('generateConjunction').addEventListener('click', () => generateWord('conjunctions'));
+            document.getElementById('generateInterjection').addEventListener('click', () => generateWord('interjections'));
+            document.getElementById('generateNoun').addEventListener('click', () => generateWord('nouns'));
+            document.getElementById('generatePreposition').addEventListener('click', () => generateWord('prepositions'));
+            document.getElementById('generateVerb').addEventListener('click', () => generateWord('verbs'));
+        });
+
+        // Function to load necessary files (data files and CSS)
+        function loadFiles() {
+            Promise.all([
+                fetch('data_alphabet.json').then(response => response.json()),
+                fetch('data_rules.json').then(response => response.json()),
+                fetch('data_words.json').then(response => response.json())
+            ])
+            .then(data => {
+                console.log('Data loaded successfully');
+            })
+            .catch((error) => {
+                console.error('Error loading JSON data:', error);
+                alert('An error occurred while loading the data files. Please try again later.');
+            });
+        }
+
+        // Function to setup the starry sky background
+        function setupStarrySky() {
+            const starContainer = document.querySelector('.star-container');
+            if (starContainer) {
+                createStars(starContainer);
+                setInterval(() => createShootingStar(starContainer), 5000);
+                setInterval(() => createComet(starContainer), 8000);
+            }
+        }
+
+        // Function to create random stars
+        function createStars(container) {
+            const numberOfStars = 100;
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.top = `${Math.random() * 100}vh`;
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.animationDuration = `${Math.random() * 2 + 2}s`;
+                container.appendChild(star);
+            }
+        }
+
+        // Function to create a shooting star
+        function createShootingStar(container) {
+            const shootingStar = document.createElement('div');
+            shootingStar.classList.add('shooting-star');
+            shootingStar.style.top = `${Math.random() * 50}vh`;
+            shootingStar.style.left = `-${Math.random() * 20}vw`;
+            container.appendChild(shootingStar);
+            setTimeout(() => shootingStar.remove(), 2000);
+        }
+
+        // Function to create a comet
+        function createComet(container) {
+            const comet = document.createElement('div');
+            comet.classList.add('comet');
+            comet.style.top = `${Math.random() * 100}vh`;
+            comet.style.left = `100vw`;
+            container.appendChild(comet);
+            setTimeout(() => comet.remove(), 4000);
+        }
+
+        // Function to generate a new word based on the selected category
+        function generateWord(category) {
+            Promise.all([
+                fetch('data_alphabet.json').then(response => response.json()),
+                fetch('data_rules.json').then(response => response.json()),
+                fetch('data_words.json').then(response => response.json())
+            ])
+            .then(([alphabetData, rulesData, wordsData]) => {
+                const availableLetters = alphabetData[category];
+                const wordRules = rulesData[category];
+                const existingWords = wordsData[category] || [];
+                
+                const newWord = generateNewWord(availableLetters, wordRules);
+
+                if (existingWords.some(word => word.word === newWord)) {
+                    alert('This word already exists. Generating a new one.');
+                    return generateWord(category);
+                }
+
+                const newWordData = {
+                    word: newWord,
+                    category: category,
+                    english: wordRules[newWord].english,
+                };
+
+                existingWords.push(newWordData);
+                existingWords.sort((a, b) => a.word.localeCompare(b.word));
+
+                wordsData[category] = existingWords;
+                saveWordsData(wordsData);
+                updateDictionaryModule(category, existingWords);
+            })
+            .catch(error => console.error('Error generating word:', error));
+        }
+
+        // Function to generate a new word based on available letters and rules
+        function generateNewWord(availableLetters, wordRules) {
+            const randomLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
+            const randomSyllable = wordRules[randomLetter];
+            return randomSyllable[0] + randomSyllable[1];
+        }
+
+        // Function to save the updated data to the server or storage
+        function saveWordsData(updatedData) {
+            fetch('save_words.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedData)
+            })
+            .then(response => response.json())
+            .then(() => {
+                console.log('Words data updated successfully');
+            })
+            .catch(error => console.error('Error saving words data:', error));
+        }
+
+        // Function to update the dictionary module with the new word
+        function updateDictionaryModule(category, wordsList) {
+            const dictionaryList = document.getElementById('wordListContent');
+            const filteredWords = wordsList.filter(word => word.category === category);
+            filteredWords.sort((a, b) => a.word.localeCompare(b.word));
+
+            dictionaryList.innerHTML = '';
+            filteredWords.forEach(word => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <span class="word" onclick="playAudio('${word.word}', '${word.english}')">
+                        <strong>${word.category}:</strong> ${word.word} (${word.english})
+                    </span>
+                `;
+                dictionaryList.appendChild(listItem);
+            });
+        }
+
+        // Function to play audio for the selected word
+        function playAudio(azaWord, englishMeaning) {
+            const audio = new Audio(`path/to/audio/${azaWord}.mp3`);
+            audio.play();
+            audio.onended = function() {
+                alert(`The meaning of the word is: ${englishMeaning}`);
+            };
+        }
+    </script>
+</body>
+</html>
+

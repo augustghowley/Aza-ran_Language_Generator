@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aza'ran Fantasy Language Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&family=Cinzel+Decorative&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Starry Background Elements -->
+    <div class="star-container"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Aza'ran Fantasy Language Generator</h1>
+        <h2>About the Project</h2>
+        <p>Help me generate a dictionary using my generator and be a part of a creative project!</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Video Module -->
+        <div class="video-module">
+            <video controls>
+                <source src="npc.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="subtitles">
+                <p>Aza'ran Greeting: 𐡍𐡀𐡌𐡍𐡀! 𐡇𐡉 𐡋𐡀𐡑𐡎𐡀 𐡉𐡇𐡋 𐡉𐡊𐡓 𐡏𐡊𐡍𐡀.</p>
+                <p>𐡇𐡉 𐡏𐡊𐡍𐡀 𐡉𐡇𐡋 𐡏𐡊𐡍𐡀, 𐡏𐡊𐡍𐡀𐡕, 𐡏𐡊𐡍𐡀𐡑.</p>
+                <p>English Translation: "Greetings! My name is Lah-psah. My pronouns are Aknah (subject), Aknath (object), and Aknadd (possessive)."</p>
+            </div>
+        </div>
+
+        <!-- Audio Module -->
+        <div class="audio-module">
+            <h3>Audio Module</h3>
+            <p>Click on any word in the dictionary to hear its pronunciation.</p>
+            <div class="audio-controls">
+                <button onclick="stopOscillator()">Stop Sound</button>
+            </div>
+        </div>
+
+        <!-- Word Generator Module -->
+        <div class="word-generator-module">
+            <h3>Auto-Generate Words for Aza'ran Dictionary</h3>
+            <p class="instructions">Click a button to generate a new word in the selected category:</p>
+            <button class="category-button" id="generateAdjective">Generate Adjective</button>
+            <button class="category-button" id="generateAdverb">Generate Adverb</button>
+            <button class="category-button" id="generateConjunction">Generate Conjunction</button>
+            <button class="category-button" id="generateInterjection">Generate Interjection</button>
+            <button class="category-button" id="generateNoun">Generate Noun</button>
+            <button class="category-button" id="generatePreposition">Generate Preposition</button>
+            <button class="category-button" id="generateVerb">Generate Verb</button>
+            <p class="note">*Note: Generated words will be added to the corresponding category in the dictionary and must be unique, based on rules from data_rules.json. Please refer to data_alphabet.json for the alphabetical order during generation.*</p>
+        </div>
+
+        <!-- Dictionary Module -->
+        <div class="dictionary-module">
+            <h3 class="moduleHead">Dictionary Module</h3>
+            <div class="dictionary-box">
+                <div class="filterButtons">
+                    <button onclick="loadWords('adjectives')">Adjectives</button>
+                    <button onclick="loadWords('adverbs')">Adverbs</button>
+                    <button onclick="loadWords('conjunctions')">Conjunctions</button>
+                    <button onclick="loadWords('interjections')">Interjections</button>
+                    <button onclick="loadWords('nouns')">Nouns</button>
+                    <button onclick="loadWords('prepositions')">Prepositions</button>
+                    <button onclick="loadWords('pronouns_and_genders')">Pronouns & Genders</button>
+                    <button onclick="loadWords('verbs')">Verbs</button>
+                </div>
+                <div class="wordList" id="wordList">
+                    <ul id="wordListContent"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h3>About Me</h3>
+        <p>My name is August G Howley, I am a trans storyteller blending inclusive world-building, sci-fi fantasy, and immersive language systems across novels and interactive game development.</p>
+        <button class="button" onclick="window.open('https://linktr.ee/augustghowley', '_blank')">Visit My Linktree</button>
+        <p>&copy; 2025 Aza'ran Language Project. All rights reserved.</p>
+        <p><a href="README.md" style="color: cyan;">Read the Documentation</a></p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script2.js"></script>
+</body>
+</html>
+
+
+
+

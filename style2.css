@@ -1,0 +1,288 @@
+/* Layout by August G. Howley */
+
+/* Importing Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pridi&family=Cinzel+Decorative&family=Uncial+Antiqua&display=swap');
+
+/* Global Font Settings */
+body {
+    font-family: "Pridi", "Cinzel Decorative", "Uncial Antiqua", verdana, helvetica, arial, sans-serif;
+    font-size: 11px;
+    background: #000000 url('https://tenor.com/view/comet-space-stars-shooting-star-wish-gif-4965228') no-repeat fixed center top;
+    background-size: cover;
+    animation: starryBackground 40s linear infinite; /* Comet background at 0.25 speed */
+    margin: 0;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Comet Background Animation */
+@keyframes starryBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Grid Layout for Modules */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: left and right */
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+/* Header and Footer */
+.header, .footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.header {
+    color: #00b3b3;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #00b3b3;
+    margin-bottom: 10px;
+    font-family: "Cinzel Decorative", "Uncial Antiqua", sans-serif;
+}
+
+.header h2 {
+    font-size: 22px;
+    color: #ff7043;
+    margin-bottom: 20px;
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
+.header p {
+    font-size: 14px;
+    color: #ff7043;
+}
+
+.footer {
+    color: #00b3b3;
+    border-top: 2px solid #00b3b3;
+}
+
+.footer h3 {
+    font-size: 22px;
+    color: #00b3b3;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ff7043;
+    margin: 5px 0;
+}
+
+.footer a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer .button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Video Module - Top Left Corner */
+.video-module {
+    grid-column: 1 / 2; /* Left column */
+    background-color: #000;
+    border: 10px solid transparent;
+    border-image: url('https://pixabay.com/illustrations/gears-border-frame-cut-out-6531776/') 30 round; /* Steampunk border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 400px; /* Fixed width */
+}
+
+.video-module video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-module .subtitles {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ff7043;
+    font-family: 'Pridi', serif;
+    text-align: center;
+}
+
+.video-module .video-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.video-module button {
+    background-color: black;
+    color: cyan;
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-mod极button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Audio Module - MySpace Music Player Style */
+.audio-module {
+    grid-column: 1 / 2; /* Left column, below video */
+    background: #050f07;
+    color: #00b3b3;
+    border: 10px solid transparent;
+    border-image: url('https://www.pngkit.com/bigpic/u2q8o0u2r5u2u2w7/') 30 round; /* Steampunk border */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 400px; /* Fixed width */
+}
+
+.audio-module h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.audio-module p {
+    font-size: 14px;
+    color: #ff7043;
+    margin-bottom: 15px;
+}
+
+.audio-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.audio-controls button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-controls button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Word Generator Module - Right Side */
+.word-generator-module {
+    grid-column: 2 / 3; /* Right column */
+    background: #050f07;
+    color: #00b3b3;
+    border: 10px solid transparent;
+    border-image: url('https://www.vecteezy.com/png/33498622-steampunk-border-frame-png-transparent-background-ai-generative') 30 round; /* Steampunk border */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.word-generator-module h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.word-generator-module .instructions {
+    font-size: 14px;
+    color: #ff7043;
+    margin-bottom: 15px;
+}
+
+/* Dictionary Module - Below Word Generator */
+.dictionary-module {
+    grid-column: 2 / 3; /* Right column, below word generator */
+    background: #050f07;
+    color: #00b3b3;
+    border: 10px solid transparent;
+    border-image: url('https://pixabay.com/illustrations/steampunk-frame-transparent-5154981/') 30 round; /* Steampunk border */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    height: 400px; /* Tall size */
+    overflow-y: auto;
+}
+
+.dictionary-module h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dictionary-module .dictionary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dictionary-module .filterButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dictionary-module .filterButtons button {
+    background-color: black;
+    color: cyan;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dictionary-module .filterButtons button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.dictionary-module .wordList {
+    margin-top: 20px;
+}
+
+.dictionary-module .wordList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dictionary-module .wordList li {
+    margin-bottom: 10px;
+}
+
+.dictionary-module .wordList li span {
+    cursor: pointer;
+}
+

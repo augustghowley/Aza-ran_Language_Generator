@@ -1,0 +1,118 @@
+
+/* Root Variables Update */
+:root {
+  --skin-tone: #a67c52; /* Medium brown skin tone */
+  --hair-color: #000000; /* Black hair */
+  --hair-highlight: #00FFFF; /* Cyan streak */
+  --eye-color: #708238; /* Olive green */
+  --rune-glow: rgba(255, 215, 0, 6); /* Glowing gold runes */
+  --clothing-primary: #008b8b; /* Dark cyan */
+  --clothing-secondary: #00ced1; /* Teal */
+  --metal-accent: #a67c52; /* Bronze */
+}
+
+/* Adjusting Facial Features */
+.base-face .face1 .line,
+.base-face .face2 .line {
+  background: var(--skin-tone);
+}
+
+/* Updating Eyes */
+.left-eye .eye2, .right-eye .eye2 {
+  background: var(--eye-color);
+}
+
+/* Adjusting Hair */
+.left-side-hair .hair1 .line,
+.left-side-hair .hair2 .line,
+.top-left-hair .hair1 .line,
+.top-right-hair .hair1 .line {
+  background: var(--hair-color);
+}
+
+.top-left-hair .hair4-shadow .shadow,
+.top-right-hair .hair1 .line .shadow {
+  background: var(--hair-highlight);
+}
+
+/* Styling Ears (Vulcan-Inspired) */
+.left-ear, .right-ear {
+  width: 60px;
+  height: 180px;
+  border-radius: 20% 80% 20% 80% / 30% 100% 30% 100%;
+  background: var(--skin-tone);
+}
+
+/* Piercings */
+.piercing-lip {
+  position: absolute;
+  left: 640px;
+  top: 550px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: silver;
+  box-shadow: 0 0 3px gray;
+}
+
+.piercing-septum {
+  position: absolute;
+  left: 705px;
+  top: 460px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid silver;
+  box-shadow: 0 0 5px gray;
+}
+
+.piercing-eyebrow {
+  position: absolute;
+  left: 620px;
+  top: 250px;
+  width: 20px;
+  height: 4px;
+  background: silver;
+  box-shadow: 0 0 2px gray;
+}
+
+/* Glowing Gold Runes */
+.temple-runes, .hand-runes {
+  position: absolute;
+  background: var(--rune-glow);
+  width: 50px;
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--rune-glow);
+}
+
+.temple-runes {
+  left: 700px;
+  top: 200px;
+}
+
+.hand-runes {
+  left: 500px;
+  top: 800px;
+}
+
+/* Steampunk Clothing */
+.steampunk-clothing {
+  background: linear-gradient(to bottom, var(--clothing-primary), var(--clothing-secondary));
+  border: 2px solid var(--metal-accent);
+  box-shadow: inset 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+/* Jacket */
+.jacket {
+  background: var(--clothing-primary);
+  border: 3px solid var(--metal-accent);
+  padding: 10px;
+  box-shadow: inset 0 0 15px rgba(0, 206, 209, 0.8);
+}
+
+/* Accessories */
+.belt, .buttons, .chains {
+  background: var(--metal-accent);
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+}
